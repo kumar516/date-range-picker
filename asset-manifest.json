@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kumar516/date-range-picker.git/static/css/main.2022dce4.css",
+    "main.js": "/kumar516/date-range-picker.git/static/js/main.76867729.js",
+    "static/js/453.193001d1.chunk.js": "/kumar516/date-range-picker.git/static/js/453.193001d1.chunk.js",
+    "static/media/logo.svg": "/kumar516/date-range-picker.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/kumar516/date-range-picker.git/index.html",
+    "main.2022dce4.css.map": "/kumar516/date-range-picker.git/static/css/main.2022dce4.css.map",
+    "main.76867729.js.map": "/kumar516/date-range-picker.git/static/js/main.76867729.js.map",
+    "453.193001d1.chunk.js.map": "/kumar516/date-range-picker.git/static/js/453.193001d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2022dce4.css",
+    "static/js/main.76867729.js"
+  ]
+}
