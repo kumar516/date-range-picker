@@ -1,0 +1,231 @@
+/* Container Styling */
+.date-range-container {
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  width: max-content;
+  margin: 1rem;
+}
+
+.date-input {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  min-width: 16rem;
+  cursor: pointer;
+  min-height: 1.5rem;
+  border: none;
+}
+
+.date-range-input-value {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 0.75rem;
+  align-items: center;
+}
+
+.arrow-icon {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.15rem;
+  background: #6c757d33;
+}
+
+.date-range-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #6c757d;
+  padding: 0.5rem;
+  height: 100%;
+  border-left: 1px solid #dfdfdf;
+}
+
+.timezone-dropdown {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  width: 10rem;
+  min-height: 2.5rem;
+  border: none;
+  border-right: 2px solid #dfdfdf;
+}
+
+.timezone-dropdown:focus-visible {
+  outline: none;
+}
+
+.date-input:focus-visible {
+  outline: none;
+}
+
+.date-range-input-container {
+  border: 2px solid #dfdfdf;
+  border-radius: 0.35rem;
+  display: flex;
+  width: fit-content;
+}
+
+.calendar {
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+  background: white;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 999;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.calendar-header button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  justify-content: center;
+}
+
+.day-label {
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-cell {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.825rem;
+  transition: background 0.2s ease;
+}
+
+.calendar-cell.active:hover {
+  background-color: #dbeafe;
+}
+
+.calendar-cell.in-range {
+  background-color: #dbeafe;
+  border-radius: 0;
+  color: #0c2d57;
+}
+
+.calendar-cell.range-start {
+  background-color: #1b48e7;
+  color: white;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+}
+
+.calendar-cell.range-end {
+  background-color: #1b48e7;
+  color: white;
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
+.calendar-cell.hovered {
+  background-color: #c7dfff;
+}
+
+.calendar-cell.empty {
+  cursor: default;
+  background-color: transparent;
+}
+
+.tooltip-warning {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.calendar-cell.selected-only {
+  background-color: #1b48e7;
+  color: white;
+  border-radius: 0.35rem;
+}
+
+.tooltip-warning {
+  position: absolute;
+  background: #040404;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid rgb(2, 2, 2);
+  border-radius: 4px;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  z-index: 1000;
+}
+
+.calendar-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.go-button,
+.cancel-button {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 5rem;
+}
+
+.go-button {
+  background-color: #1b48e7;
+  color: white;
+}
+
+.go-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-button:hover {
+  background-color: #ccc;
+}
+
+.calendar-current-selection {
+  border: 1px solid #dfdfdf;
+  color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: start;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  min-height: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0;
+}
+
+.message-dot {
+  font-size: 1rem;
+  margin-left: 0.25rem;
+  color: #d0c200;
+}

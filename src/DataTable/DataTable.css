@@ -1,0 +1,292 @@
+.datatable-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  background: #fff;
+  margin: 0 1.15rem;
+}
+
+.datatable-container .table-container {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  border-bottom-left-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
+.datatable-container .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datatable-container .datatable-header-container {
+  padding: 1rem 0 0 1.25rem;
+}
+
+.datatable-container .datatable-header-container .show-entries-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.datatable-container .datatable-header-container .show-entries-dropdown .col1 {
+  color: #404041;
+  font-size: 1rem;
+  padding-right: 0.75rem;
+}
+
+.datatable-container .datatable-header-container .show-entries-dropdown .col3 {
+  color: #404041;
+  font-size: 1rem;
+  padding: 0 1rem 0 0.75rem;
+}
+
+.datatable-container .datatable-header-container .datatable-second-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.datatable-container .table-container table thead tr {
+  position: sticky;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
+  top: -1px;
+  z-index: 1;
+  background: #eff5fc;
+}
+
+.datatable-container .table-container table tfoot tr {
+  position: sticky;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
+  bottom: -1px;
+  z-index: 1;
+  background: #eff5fc;
+}
+
+.datatable-container .table-container table th {
+  background-color: #eff5fc;
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.7rem 1.25rem;
+  text-align: left;
+  color: #404041;
+  vertical-align: center;
+}
+
+.datatable-container .table-container .checkbox {
+  width: 3rem;
+}
+
+.datatable-container .table-container table tbody tr {
+  border-top: solid 1px #6c757d33;
+}
+
+.datatable-container .table-container table tbody tr td {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  color: #404041b3;
+  background: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.datatable-container .table-container table .checkbox {
+  padding: 0.25rem 1rem;
+}
+
+.datatable-container .table-container table tr .right-aligned {
+  text-align: right;
+}
+
+.datatable-container .table-container table tr .wrap {
+  white-space: inherit;
+}
+
+.datatable-container .table-container table tr .center-aligned {
+  text-align: center;
+}
+
+.datatable-container .table-pagination-container {
+  padding: 0.75rem 1rem 0.25rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #6c757d33;
+}
+
+.datatable-container .table-pagination-container .txt {
+  padding: 0 0.25rem 0.5rem 0;
+  font-size: 0.8125rem;
+  color: #6c757d;
+  line-height: 1.38;
+  letter-spacing: 0.09rem;
+}
+
+.datatable-container .table-pagination-container .pag-container {
+  padding: 0 0.25rem 0.5rem 0;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  min-height: 2.15rem;
+}
+
+.datatable-container .table-pagination-container .number-container {
+  display: flex;
+  align-items: center;
+}
+
+.datatable-container .table-pagination-container .number-container .num.active {
+  background: #2045a4;
+  color: #ffffff;
+}
+
+.datatable-container .table-pagination-container .number-container .num {
+  min-width: 1.65rem;
+  height: 1.65rem;
+  background: #ffffff;
+  color: #404041;
+  border-radius: 50%;
+  margin: 0 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.datatable-container .table-pagination-container .txt-con {
+  letter-spacing: 0.05rem;
+  color: #404041;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 0 0.75rem;
+  cursor: pointer;
+}
+
+.datatable-container .table-pagination-container .txt-con.disable {
+  color: #6c757d;
+  cursor: default;
+}
+
+.datatable-container .datatable-second-row1 {
+  padding: 0 1rem;
+}
+
+.datatable-container .display_none {
+  display: none;
+}
+
+.datatable-container .no-data {
+  text-transform: none !important;
+}
+
+.datatable-container .datatable-header-con {
+  display: flex;
+  align-items: center;
+}
+
+.datatable-container .datatable-header-con .sort-icon-con {
+  display: flex;
+  flex-direction: column;
+  margin: -0.35rem 0 -0.35rem 0.5rem;
+  cursor: pointer;
+}
+
+.datatable-container .datatable-header-con .data-table-top-arrow {
+  margin: 0 -0.5rem -0.5rem 0;
+  color: #6c757d66;
+}
+
+.datatable-container .datatable-header-con .data-table-down-arrow {
+  margin: -0.5rem -0.5rem 0 0;
+  color: #6c757d66;
+}
+
+.datatable-container
+  .datatable-header-con
+  .sort-icon-con.asc
+  .data-table-down-arrow {
+  visibility: hidden;
+}
+
+.datatable-container
+  .datatable-header-con
+  .sort-icon-con.asc
+  .data-table-top-arrow {
+  color: #404041;
+}
+
+.datatable-container
+  .datatable-header-con
+  .sort-icon-con.desc
+  .data_table_top_arrow {
+  visibility: hidden;
+}
+
+.datatable-container
+  .datatable-header-con
+  .sort-icon-con.desc
+  .data-table-down-arrow {
+  color: #404041;
+}
+
+.datatable-container .center_aligned .datatable-header-con {
+  justify-content: center;
+}
+
+.datatable-container .right_aligned .datatable-header-con {
+  justify-content: flex-end;
+}
+
+.data-table-dropdown {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.875rem;
+  width: 5rem;
+  min-height: 2rem;
+  border: none;
+  border: 2px solid #dfdfdf;
+  border-radius: 0.25rem;
+}
+
+.data-table-dropdown:focus-visible {
+  outline: none;
+}
+
+.search-input-field-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.search-input-field-container .search-icon {
+  color: #6c757d66;
+  position: absolute;
+  left: 0.5rem;
+  cursor: text;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.search-input-field-container input {
+  border-radius: 0.35rem;
+  border: 1px solid#dfdfdf;
+  outline: none;
+  outline-offset: 0;
+  height: calc(2.5rem - 4px);
+  font-size: 1rem;
+  font-family: "OpenSans-Regular";
+  color: #404041;
+  width: 10rem;
+  padding: 0 0.5rem 0 2rem;
+}
+
+.search-input-field-container input:focus-visible {
+  outline-offset: unset;
+  outline: none;
+  border-color: #009cde;
+}
